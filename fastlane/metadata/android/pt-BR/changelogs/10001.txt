@@ -1,0 +1,3 @@
+• O aviso de fim de etapa volta a funcionar depois que o celular reinicia
+• Ícone temático (Android 13+)
+• Ferramentas de compilação atualizadas

@@ -199,6 +199,18 @@ object Alarms {
         if (running) schedule(ctx, endTime, plan) else p.edit().putLong("end", 0L).apply()
     }
 
+    /**
+     * O Android apaga os alarmes ao reiniciar o aparelho: reagenda a etapa que estava rodando,
+     * ou avisa na hora se ela terminou enquanto o aparelho estava desligado.
+     */
+    fun restore(ctx: Context) {
+        val p = prefs(ctx)
+        val end = p.getLong("end", 0L)
+        if (end == 0L) return
+        val plan = p.getString("plan", null)?.let(Plan::parse) ?: return cancel(ctx)
+        if (System.currentTimeMillis() < end - 1500) schedule(ctx, end, plan) else onAlarm(ctx)
+    }
+
     /** Fim de etapa com o app aberto: o JS já mostrou o aviso na tela. */
     fun alertNow(ctx: Context, sound: Boolean, vibrate: Boolean) {
         if (sound) {

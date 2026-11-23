@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <!-- Permissão especial: o usuário liga em Configurações; sem ela o app usa alarme aproximado. -->
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <!-- Permissão normal: o Android apaga os alarmes ao reiniciar; com ela o app reagenda a etapa em andamento. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <!-- Sem INTERNET: o app não tem como enviar dados para lugar nenhum. -->
 
@@ -32,5 +34,15 @@
         <receiver
             android:name=".AlarmReceiver"
             android:exported="false" />
+
+        <!-- Não exportado: só o sistema (que ignora essa trava) consegue enviar esses avisos. -->
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>

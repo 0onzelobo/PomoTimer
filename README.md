@@ -42,6 +42,9 @@ bloqueia `*.jks` e `*.keystore`).
 ## Estrutura
 - `app/src/main/assets/index.html` — interface completa (HTML/CSS/JS, sem rede, CSP estrita)
 - `MainActivity.kt` — WebView endurecido + ponte `window.Android` com entrada validada
-- `Alarms.kt` — AlarmManager (exato quando permitido) e notificações
+- `Alarms.kt` — AlarmManager (exato quando permitido), notificações e emenda das etapas em segundo plano
+- `BootReceiver.kt` — reagenda a etapa em andamento depois que o aparelho reinicia
 
-Licença MIT · Fonte Inter sob OFL 1.1 · Privacidade: `PRIVACY.md`
+## Licença
+Código sob licença MIT (`LICENSE`). A fonte Inter, embutida no app, é distribuída sob a SIL Open Font
+License 1.1 (`app/src/main/assets/licenses/OFL-Inter.txt`). Privacidade: `PRIVACY.md`.
