@@ -1,0 +1,8 @@
+Timer Pomodoro com visual de vidro fosco, modo escuro e claro.
+
+• Tempos de foco, pausa curta, pausa longa e ciclos configuráveis
+• Meta diária de foco
+• Resumo: gráfico de 7/14/30 dias, heatmap de 20 semanas e horários em que você mais foca
+• Aviso com notificação e vibração, mesmo com a tela desligada
+
+Sem internet, sem anúncios, sem rastreadores. Seus dados ficam só no seu aparelho.
