@@ -6,7 +6,7 @@ plugins {
 }
 
 // A chave de assinatura NUNCA fica no repositório: vem de variáveis de ambiente
-// (definidas no seu terminal na hora do build de release).
+// (GitHub Secrets no workflow de release, ou o seu terminal num build local).
 val keystorePath: String? = System.getenv("KEYSTORE_FILE")
 
 android {
@@ -42,7 +42,7 @@ android {
     }
 
     lint {
-        // Avisos não barram o build; erros fatais ainda barram o release (lintVital)
+        // Avisos não barram o build (relatório sai como artefato no GitHub Actions); erros fatais ainda barram o release (lintVital)
         abortOnError = false
     }
 

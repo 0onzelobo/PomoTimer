@@ -8,7 +8,7 @@ Todo APK oficial distribuído pelo mantenedor deve vir acompanhado de um checksu
 impressão digital do certificado de assinatura.
 
 ```bash
-sha256sum -c pomodoro-X.Y.Z.apk.sha256
-apksigner verify --print-certs pomodoro-X.Y.Z.apk
+sha256sum -c pomotimer-X.Y.Z.apk.sha256
+apksigner verify --print-certs pomotimer-X.Y.Z.apk
 ```
 A impressão digital SHA-256 do certificado tem que ser igual à publicada no README.
