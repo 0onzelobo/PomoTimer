@@ -28,7 +28,7 @@ jobs:
           java-version: '17'
 
       # Também valida o gradle-wrapper.jar contra os checksums oficiais
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
 
       - name: Lint e APK de teste
         run: ./gradlew lintDebug assembleDebug --no-daemon
