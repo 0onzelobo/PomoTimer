@@ -1,8 +1,11 @@
 Timer Pomodoro com visual de vidro fosco, modo escuro e claro.
 
 • Tempos de foco, pausa curta, pausa longa e ciclos configuráveis
+• Aviso no horário certo mesmo com o app fechado e a tela desligada, com notificação, som e vibração (cada um pode ser desligado)
+• Início automático das pausas e, se quiser, do foco, mesmo com o app fechado
+• Reagenda o aviso se o celular reiniciar no meio de uma etapa
 • Meta diária de foco
-• Resumo: gráfico de 7/14/30 dias, heatmap de 20 semanas e horários em que você mais foca
-• Aviso com notificação e vibração, mesmo com a tela desligada
+• Resumo: gráfico de 7/14/30 dias, sequência de dias, mapa de calor de 20 semanas e horários em que você mais foca
+• Tema escuro, claro ou automático, com ícone temático no Android 13+
 
 Sem internet, sem anúncios, sem rastreadores. Seus dados ficam só no seu aparelho.
